@@ -1,3 +1,13 @@
+// let job = {
+//     title : "Web Designer",
+//     startDate : "October 2022",
+//     company : "AT&T",
+//     minSalary : 52000,
+//     maxSalary : 86000
+//     };
+//     let str = JSON.stringify(job);
+//     console.log(str);
+
 let job = {
     title : "Web Designer",
     startDate : "October 2022",
@@ -5,5 +15,6 @@ let job = {
     minSalary : 52000,
     maxSalary : 86000
     };
-    let str = JSON.stringify(job);
+    let filter = ["title", "company"];
+    let str = JSON.stringify(job, filter);
     console.log(str);
